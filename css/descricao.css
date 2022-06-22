@@ -1,0 +1,9 @@
+.descricao {
+	display: block;
+	font-size: 1.25rem;
+	margin: 0 0 10px;
+	line-height: 2em;
+}
+.descricao.observacao {
+    margin-top: 2.80rem;
+}
