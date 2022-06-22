@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+
+		<title>Controle financeiro UBER</title>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" href="./css/cabecalho.css" />
+		<link rel="stylesheet" href="./css/caixa.css" />
+		<link rel="stylesheet" href="./css/caixaDeOpcoes.css" />
+		<link rel="stylesheet" href="./css/corpo.css" />
+		<link rel="stylesheet" href="./css/descricao.css" />
+		<link rel="stylesheet" href="./css/inputDespesas.css" />
+		<link rel="stylesheet" href="./css/inputPadrao.css" />
+		<link rel="stylesheet" href="./css/logo.css" />
+		<link rel="stylesheet" href="./css/menu/menu-item.css" />
+		<link rel="stylesheet" href="./css/menu/menu-link.css" />
+		<link rel="stylesheet" href="./css/menu/menu-lista.css" />
+		<link rel="stylesheet" href="./css/menu/menu.css" />
+		<link rel="stylesheet" href="./css/tituloPrincipal.css" />
+		<link rel="stylesheet" href="./css/rodape.css" />
+		<link rel="stylesheet" href="./css/dados.css" />
+		<link rel="stylesheet" href="./css/despesas.css" />
+		<link rel="stylesheet" href="./css/despesa.css" />
+		<link rel="stylesheet" href="./css/tituloDespesas.css" />
+		<link rel="stylesheet" href="./css/descricaoDespesas.css" />
+		<link rel="stylesheet" href="./css/caixaDeTexto.css" />
+		<link rel="stylesheet" href="./css/enviar.css" />
+
+	</head>
+	
+	<body class="corpo">
+		<header class="cabecalho">
+			<h1 class="logo"><img src="./img/transferir.png" alt="logo da uber"></h1>
+			<nav class="menu">
+				<ul class="menu__lista">
+					<li class="menu__item"><a class="menu__link ativo" href="./index.html">home</a></li>
+					<li class="menu__item"><a class="menu__link" href="controle-financeiro.html"> Controle Financeiro</a></li>
+					<li class="menu__item"><a class="menu__link" href="contato.html"> contato</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<form class="dados">
+				
+				<section class="ganhos">
+					<h2 class="titulo-principal">Ganhos</h2>
+
+					<label class="descricao" for="veiculo">Veiculo (Marca, Modelo e Ano)</label>
+					<input type="text" id="veiculo" class="input-padrao veiculo" required placeholder="ex: Nissan Versa Uniqui 1.9 17/18">
+					
+					<label class="descricao" for="placa">Placa</label>
+					<input type="text" id="placa" class="input-padrao" required placeholder="ex: OBS3210 ou BRA2E19">
+
+					<label class="descricao" for="data">Data</label>
+					<p>De</p><input type="date" id="data" class="input-padrao" required placeholder="ex: 12/12/2012"><p>À</p><input type="date" id="data" class="input-padrao">
+
+
+					<fieldset>
+						<legend class="descricao">Qual o aplicativo?</legend>
+						<select class="caixa-de-opcoes" required="">
+							<option></option>
+							<option>Particular</option>
+							<option>UBER</option>
+							<option>99POP</option>
+							<option>INDRIVER</option>
+							<option>TAXI</option>
+							<option>CABIFY</option>
+							<option>IFOOD</option>
+							<option>UBER EATS</option>
+							<option>99ENTREGAS</option>
+							<option>Outros</option>
+						</select>
+					</fieldset>
+
+					<label class="descricao" for="km">Inssira o KM rodado!</label>
+					<input type="number" id="km" class="input-padrao" required="">
+
+					<label class="descricao" for="horas-trabalhada">Horas trabalhada</label>
+					<input type="time" id="horas-trabalhada" class="input-padrao" required="">
+
+					<label class="descricao" for="viagens-realizadas">Numero de viagens realizadas</label>
+					<input type="number" id="viagens-realizada" class="input-padrao" required="">
+
+					<label class="descricao" for="valor-ganho">Valor Ganho</label>
+					<input type="number" id="valor-ganho" class="input-padrao" required="" >
+
+					<label class="descricao" for="observacao">Observação</label>
+					<textarea cols="70" rows="10" id="observacao"></textarea class="input-padrao" required >						
+				</section>
+
+				<section class="despesas">
+					
+					<h3 class="titulo-principal">Despesas</h3>
+
+					<div class="despesa">
+						
+						<h2 class="titulo-despesas">Combustivel</h2>
+						<fieldset>
+							<legend class="descricao centralizar">Qual o Combustivel?</legend>
+							<select required="">
+								<option></option>
+								<option>GNV</option>
+								<option>Etanol</option>
+								<option>Gazolina</option>
+								<option>Diesel</option>								
+							</select>
+						</fieldset>
+
+						<label class="descricao" for="preco-litro">Preço do litro</label>
+						<input type="text" id="preco-litro" class="input-despesas" required="">
+
+						<label class="descricao" for="valor">Valor Gasto</label>
+						<input type="number" id="valor" class="input-despesas" required="">
+
+						<label class="descricao" for="observacao">Observação</label>
+						<textarea cols="" rows="" id="observacao" class="caixa-de-texto" required></textarea>
+					</div>
+
+					<div class="despesa">
+						<h2 class="titulo-despesas">Manutenção</h2>
+						<fieldset>
+							<legend class="descricao centralizar">O que foi feito?</legend>
+							<select>
+								<option></option>
+								<option>Alinhamento</option>
+								<option>Ar Condicionado</option>
+								<option>Balanceamento</option>
+								<option>Bateria</option>
+								<option>Bomba de Combustível</option>
+								<option>Buzina</option>
+								<option>Calibragem</option>
+								<option>Carroceria</option>
+								<option>Cinto</option>
+								<option>Correia</option>
+								<option>Direção Hidráulica</option>
+								<option>Espelhos</option>
+								<option>Filtro de Ar</option>
+								<option>Filtro de Combustivel</option>
+								<option>Filtro de Óleo</option>
+								<option>Fluido de Freio</option>
+								<option>Fluido de Transmição</option>
+								<option>Fluido de Óleo</option>
+								<option>Limpadores de Parabrisa</option>
+								<option>Luzes</option>
+								<option>Mão de Obra</option>
+								<option>Pastilha de Freio</option>
+								<option>Pneu</option>
+								<option>Radiador</option>
+								<option>Reparo</option>
+								<option>Revisão</option>
+								<option>Rodizio</option>
+								<option>Suspensão</option>
+								<option>Troca de Freio</option>
+								<option>Troca de Óleo</option>
+								<option>Velas</option>
+								<option>Vidros</option>
+								<option>Outros</option>
+							</select>
+						</fieldset>
+						
+						<label class="descricao" for="valor">Valor Gasto</label>
+						<input type="number" id="valor" class="input-despesas">
+
+						<input type="file" name="" class="input-despesas">
+						
+						<label class="descricao observacao" for="observacao">Observação</label>
+						<textarea  placeholder="oficina (endereço, telefone, mecanico responçavel, nota de serviço etc), garantia (peças ou serviço) e outros. " cols="" rows="" id="observacao" class="caixa-de-texto" required></textarea>
+					</div>
+					
+					<div class="despesa">
+							<h2 class="titulo-despesas">Outras Despesas</h2>
+							<fieldset>
+								<legend class="descricao centralizar">Categoria</legend>
+								<select>
+									<option></option>
+									<option>Alimentação</option>
+									<option>Aluguel do Veiculo</option>
+									<option>Cuidados Pessoais</option>
+									<option>Documentação</option>
+									<option>Estacionamento</option>
+									<option>Lavagem</option>
+									<option>Multa</option>
+									<option>Parcela</option>
+									<option>Pedagio</option>
+									<option>Seguro</option>
+									<option>Outros</option>								
+								</select>
+								<label class="descricao" for="valor">Valor Gasto</label>
+								<input type="number" id="valor" class="input-despesas">
+								<input type="file" name="" class="input-despesas">
+								<label class="descricao observacao" for="observacao">Observação</label>
+								<textarea cols="" rows="" id="observacao" class="caixa-de-texto" required></textarea>
+							</fieldset>
+						
+					</div>		
+				</section>
+				<input type="submit" value="Enviar Formulario" class="enviar">
+			</form>	
+		</main>
+
+		<footer class="rodape">
+			<img src="./img/logoFundoBranco.png" alt="logo da uber">
+			<p class="copyright">&copy; Copyrigth Gerenciamento Uber - 2022</p> 
+			                    <!--unicode = simbulos -->
+		</footer>
+
+	</body>
+</html>

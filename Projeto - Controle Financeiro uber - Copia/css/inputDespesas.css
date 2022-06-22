@@ -1,0 +1,7 @@
+.input-despesas {
+	display: inline-block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+	box-sizing: border-box;
+}
