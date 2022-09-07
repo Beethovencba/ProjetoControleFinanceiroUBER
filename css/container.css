@@ -1,0 +1,42 @@
+
+
+.form-ganhos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "titulo titulo titulo" "a b c" "d d d";
+    
+}
+.tituloPrincipal {
+    grid-area: titulo;
+}
+
+.caixa.a {
+    grid-area: a;
+}
+
+.caixa.b {
+    grid-area: b;
+}
+
+.caixa.c {
+    grid-area: c;
+}
+
+.caixa.d {
+    grid-area: d;
+}
+
+.caixa {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+fieldset {
+    padding: 0;
+}
+

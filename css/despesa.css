@@ -1,0 +1,11 @@
+.despesa {
+	display: inline-block;
+	width: 370px;
+	height: 600px;
+
+	
+	
+	border: 2px solid #000000;
+	border-radius: 10px;
+    text-align: center;
+}
